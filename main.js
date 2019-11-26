@@ -31,10 +31,6 @@ class Block {
     set value(val) {
         this._value = val;
         this.ele.innerText = val || '';
-        this.ele.style.transform = 'scale(.7)';
-        setTimeout(() => {
-            this.ele.style.transform = 'scale(1)';
-        }, 170);
     }
 }
 
