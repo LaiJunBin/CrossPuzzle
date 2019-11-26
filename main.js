@@ -8,10 +8,10 @@ class Block {
         this.ele.classList.add('block');
         this.ele.style.opacity = '.5';
 
-        this.ele.addEventListener('touchstart', () => {
-            if (this._enable)
-                GAME.click(this.x, this.y);
-        });
+        // this.ele.addEventListener('touchstart', () => {
+        //     if (this._enable)
+        //         GAME.click(this.x, this.y);
+        // });
 
         this.ele.addEventListener('click', () => {
             if (this._enable)
