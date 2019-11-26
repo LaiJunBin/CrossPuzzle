@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons>button {
+    width: 110px;
+    height: 40px;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    margin: 5px;
+    padding: 10px;
+}
+
+.buttons>button:not([disabled]) {
+    cursor: pointer;
+    background: #39f;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+}
+
+.blocks {
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 5px;
+    align-self: center;
+}
+
+.row {
+    display: flex;
+}
+
+.block {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    margin: 5px;
+    background: #39f;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform .2s;
+}
